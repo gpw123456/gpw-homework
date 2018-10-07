@@ -61,7 +61,8 @@
          简而言之，事件基本上如下所示：
          是否符合所有条件？
          ---> 是：运行所有事件的动作。
-        ---> 否：转到下一个事件（不包括任何子事件）。
+        ---> 否：转到下一个事件
+        （不包括任何子事件）。
 ![在这里插入图片描述](https://img-blog.csdn.net/20181007114248150?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)添加          各种活动并且赋予指令
 ![](https://img-blog.csdn.net/20181007114655351?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 11  游戏模型基本完成。
