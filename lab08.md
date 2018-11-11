@@ -7,7 +7,7 @@
 2 构建播放布局
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181111174051827.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181111175828623.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)  
 
 
 3 单击项目栏中的PlayerImages对象，然后单击左侧的“动画 - 编辑”
