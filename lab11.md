@@ -2,6 +2,7 @@
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230225037773.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
 
+
 第三次AI（人工智能，以下简称AI）浪潮已经开启。在技术层面，有算法的进步。
 当1956年人工智能开始起步的时候，人们更多是在说人工智能；在第二次浪潮期
 间，机器学习成为主流；这一次则是深度学习，是能够自我学习、自我编程的学习
