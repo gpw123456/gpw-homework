@@ -25,7 +25,7 @@ b[i++]=a[j];
 h=number/16;
 number=h;
 m++；}
- for(i=0;i<m/2;i++){
+for(i=0;i<m/2;i++){
 t=b[i];
 b[i]=b[m-i-1];
 b[m-i-1]=t;
