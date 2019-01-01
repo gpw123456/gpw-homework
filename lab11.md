@@ -1,5 +1,7 @@
 ﻿人工智能时代加速到来，算法决策兴起
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230225037773.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
+
 第三次AI（人工智能，以下简称AI）浪潮已经开启。在技术层面，有算法的进步。当1956年人工智能开始起步的时候，人们更多是在说人工智能；在第二次浪潮期间，机器学习成为主流；这一次则是深度学习，是能够自我学习、自我编程的学习算法，可以用来解决更复杂的任务。此外，计算能力的提升，包括现在的量子计算机，以及越来越普遍的大数据，对人工智能的作用和价值也非常大，使得更复杂的算法成为可能。在应用层面，从语音识别、机器翻译到医疗诊断、自动驾驶，AI应用在不断加深、不断成熟，甚至已经开始超越人类，引发人们关于失业的担忧。同时也让人们开始期待具有通用智能的终极算法。
 
 人工智能伦理问题也日益凸显
@@ -11,8 +13,11 @@
      比如，数据可能是不正确、不完整或者过时的，带来所谓的“垃圾进，垃圾出”的现象；更进一步，如果一个AI系统依赖多数学习，自然不能兼容少数族裔的利益。此外，算法歧视可能是具有自我学习和适应能力的算法在交互过程中习得的，AI系统在与现实世界交互过程中，可能没法区别什么是歧视，什么不是歧视。
      几个例子：
      泰坦尼克号让妇女和儿童离开，因为他们更多对人类的未来有更大帮助，可以更好的扩大和继承人类的知识和智慧。
+
      ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230635275.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
+
      扳道工困境中，要具体分析哪一边对人类未来的知识和智慧可能的贡献大。
+     
      ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230907300.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
 
 本文主要内容来自知乎关于AI发展伦理问题的讨论。
