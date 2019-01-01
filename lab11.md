@@ -42,10 +42,8 @@
      几个例子：
      泰坦尼克号让妇女和儿童离开，因为他们更多对人类的未来有更大帮助，可以
      更好的扩大和继承人类的知识和智慧。
-
-     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230635275.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
-
+     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230635275.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
      扳道工困境中，要具体分析哪一边对人类未来的知识和智慧可能的贡献大。
-     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230907300.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
+     ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181230230907300.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzI2ODM5Mw==,size_16,color_FFFFFF,t_70)
 
 本文主要内容来自知乎关于AI发展伦理问题的讨论。
