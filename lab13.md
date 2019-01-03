@@ -2,23 +2,20 @@
   由于水平有限，代码为粘贴，
   原作网址：  https://blog.csdn.net/haohulala/article/details/80036221                                                              
 ```
-#include "stdafx.h"                                                
-#include <stdio.h>                                                 
-#include <windows.h>                                           
+#include "stdafx.h"
+#include <stdio.h>
+#include <windows.h>
 #include <time.h>
 #include <conio.h>
 #include <stdlib.h>
 //方向键的ASCLL值:上72，左75，右77，下80
-//背景颜色的代码： 0=黑色  1蓝色 2 绿色 3湖蓝色 4红色 5紫色 6黄色 7白
-色 8灰色 9淡蓝色 
+//背景颜色的代码： 0=黑色  1蓝色 2 绿色 3湖蓝色 4红色 5紫色 6黄色 7白色 8灰色 9淡蓝色 
 //**改变当前光标方块的背景颜色和字体颜色**//
-void BackGround(unsigned int ForeColor = 7, unsigned int 
-BackGroundColor = 0) {
-	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台的
-    句柄
-	SetConsoleTextAttribute(handle, ForeColor + BackGroundColor * 
-    0x10);//改变当前光标的背景和字体颜色
+void BackGround(unsigned int ForeColor = 7, unsigned int BackGroundColor = 0) {
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台的句柄
+	SetConsoleTextAttribute(handle, ForeColor + BackGroundColor * 0x10);//改变当前光标的背景和字体颜色
 }
+ 
 //**改变光标的位置**//
 void gotoxy(int x, int y) {
 	HANDLE handle;
@@ -28,19 +25,17 @@ void gotoxy(int x, int y) {
 	handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台句柄，值为-11
 	SetConsoleCursorPosition(handle, coord);   //移动光标到x，y处
 }
- //*初始地图数据*//
+ 
+//**初始化地图数据**//
 void restart(int bk[20][20], int look[4], int move[20][20]) {
-	//bk为总的地图数据记录整个地图，为1时表示墙体，为2时表示果实，为3时
-    表示蛇
-	//look记录数据，为0时表示朝向，为1时表示长度，为3时表示胜负情况,为4
-    表示分数
+	//bk为总的地图数据记录整个地图，为1时表示墙体，为2时表示果实，为3时表示蛇
+	//look记录数据，为0时表示朝向，为1时表示长度，为3时表示胜负情况,为4表示分数
 	//move记录蛇走过的路程，用来打印蛇时判断用
 	int pp, qq;  //用来记录获取的随机坐标
 	//接下来要初始化整个地图//
 	for(int i=0;i<=16;i++)
 		for (int j = 0; j <= 16; j++) {
-			if (i == 0 || i == 16 || j == 0 || j == 16)  bk[i][j] 
-            = 1;//1表示墙体
+			if (i == 0 || i == 16 || j == 0 || j == 16)  bk[i][j] = 1;//1表示墙体
 			else bk[i][j] = 0; //0表示什么都没有
 			move[i][j] = 0;    //该数组用来记录蛇移动的轨迹
 		}
@@ -82,20 +77,20 @@ void restart(int bk[20][20], int look[4], int move[20][20]) {
 	BackGround(7, 0);//用白字黑底打印
 	printf("现在得分是:%d,请再接再厉!^_^", look[2]);
 }
+ 
+ 
 //**运动主体**//
 void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 	//bk是地图信息，look作数据记录，xy记录坐标，move记录蛇的运动轨迹
-	int b[10], qq=0, pp=0;//b用来吸收输入，qq和pp用来随机初始化果实坐
-    标
+	int b[10], qq=0, pp=0;//b用来吸收输入，qq和pp用来随机初始化果实坐标
 	if (kbhit()) {//记录按下的是哪个方向键
 		b[0] = getch();//用b来记录
-		if (b[0] == 224)  b[0] = getch();//如果为224表示为方向键，但
-        是要再一次获取才行
+		if (b[0] == 224)  b[0] = getch();//如果为224表示为方向键，但是要再一次获取才行
 		if (b[0] == 72 && look[0] != 2)
 			//如果输入的为上并且朝向不为下
 			look[0] = 1;
-		if (b[0] == 80 && look[0] != 1)                            
-		    look[0] = 2;
+		if (b[0] == 80 && look[0] != 1)
+			look[0] = 2;
 		if (b[0] == 75 && look[0] != 4)
 			look[0] = 3;
 		if (b[0] == 77 && look[0] != 3)
@@ -128,6 +123,7 @@ void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 	gotoxy(xy[0] * 2, xy[1]);//这里蛇头就往前移动了
 	BackGround(0, 3);//与蛇体一个颜色
 	printf("  ");
+ 
 	//如果吃了果实//
 	if (bk[xy[0]][xy[1]] == 2) {
 		look[2]++;//分数加一
@@ -145,6 +141,7 @@ void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 		BackGround(0, 2);
 		printf("  ");
 	}
+ 
 	//如果撞了墙或者自己//
 	if (bk[xy[0]][xy[1]] == 1 || bk[xy[0]][xy[1]] == 3) {
 		look[3] = 1;//表示已经输了
@@ -152,6 +149,7 @@ void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 		BackGround(7, 0);
 		printf("你输了，最后得分:%d", look[2]);
 	}
+ 
 	bk[xy[0]][xy[1]] = 3;//使这个位置变成蛇
 	//接下来要检测蛇然后刷新蛇的位置//
 	for(int i=0;i<=16;i++)
@@ -181,5 +179,7 @@ int main() {
 	}
 	system("pause");
 	printf("游戏结束，谢谢游玩!^_^");
-	return;
+	return 0;
+}
+
 	```
