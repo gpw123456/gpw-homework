@@ -1,18 +1,15 @@
 ﻿贪吃蛇代码C语言；
   由于水平有限，代码为粘贴，
-  原作网址：  https://blog.csdn.net/haohulala/article/details/80036221         由于所提交代码无法分隔行，较为混乱，建议看原文，谢谢！                 https://blog.csdn.net/weixin_43268393/article/details/85570568                                                       
-
+  原作网址：  https://blog.csdn.net/haohulala/article/details/80036221                                                              
+```
 #include "stdafx.h"                                                
-
 #include <stdio.h>                                                 
-
 #include <windows.h>                                           
 #include <time.h>
 #include <conio.h>
 #include <stdlib.h>
 //方向键的ASCLL值:上72，左75，右77，下80
 //背景颜色的代码： 0=黑色  1蓝色 2 绿色 3湖蓝色 4红色 5紫色 6黄色 7白
-
 色 8灰色 9淡蓝色 
 //**改变当前光标方块的背景颜色和字体颜色**//
 void BackGround(unsigned int ForeColor = 7, unsigned int 
@@ -22,7 +19,6 @@ BackGroundColor = 0) {
 	SetConsoleTextAttribute(handle, ForeColor + BackGroundColor * 
     0x10);//改变当前光标的背景和字体颜色
 }
- 
 //**改变光标的位置**//
 void gotoxy(int x, int y) {
 	HANDLE handle;
@@ -86,7 +82,6 @@ void restart(int bk[20][20], int look[4], int move[20][20]) {
 	BackGround(7, 0);//用白字黑底打印
 	printf("现在得分是:%d,请再接再厉!^_^", look[2]);
 }
- 
 //**运动主体**//
 void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 	//bk是地图信息，look作数据记录，xy记录坐标，move记录蛇的运动轨迹
@@ -187,3 +182,4 @@ int main() {
 	system("pause");
 	printf("游戏结束，谢谢游玩!^_^");
 	return;
+	```
