@@ -10,6 +10,7 @@
 #include <stdlib.h>
 //方向键的ASCLL值:上72，左75，右77，下80
 //背景颜色的代码： 0=黑色  1蓝色 2 绿色 3湖蓝色 4红色 5紫色 6黄色 7白色 8灰色 9淡蓝色 
+
 //**改变当前光标方块的背景颜色和字体颜色**//
 void BackGround(unsigned int ForeColor = 7, unsigned int BackGroundColor = 0) {
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台的句柄
@@ -24,7 +25,6 @@ void gotoxy(int x, int y) {
 	handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台句柄，值为-11
 	SetConsoleCursorPosition(handle, coord);   //移动光标到x，y处
 }
-//**初始化地图数据**//
 void restart(int bk[20][20], int look[4], int move[20][20]) {
 	//bk为总的地图数据记录整个地图，为1时表示墙体，为2时表示果实，为3时表示蛇
 	//look记录数据，为0时表示朝向，为1时表示长度，为3时表示胜负情况,为4表示分数
