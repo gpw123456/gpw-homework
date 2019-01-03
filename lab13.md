@@ -15,7 +15,6 @@ void BackGround(unsigned int ForeColor = 7, unsigned int BackGroundColor = 0) {
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台的句柄
 	SetConsoleTextAttribute(handle, ForeColor + BackGroundColor * 0x10);//改变当前光标的背景和字体颜色
 }
- 
 //**改变光标的位置**//
 void gotoxy(int x, int y) {
 	HANDLE handle;
@@ -25,7 +24,6 @@ void gotoxy(int x, int y) {
 	handle = GetStdHandle(STD_OUTPUT_HANDLE);  //获取控制台句柄，值为-11
 	SetConsoleCursorPosition(handle, coord);   //移动光标到x，y处
 }
- 
 //**初始化地图数据**//
 void restart(int bk[20][20], int look[4], int move[20][20]) {
 	//bk为总的地图数据记录整个地图，为1时表示墙体，为2时表示果实，为3时表示蛇
@@ -76,9 +74,7 @@ void restart(int bk[20][20], int look[4], int move[20][20]) {
 	gotoxy(35, 0);
 	BackGround(7, 0);//用白字黑底打印
 	printf("现在得分是:%d,请再接再厉!^_^", look[2]);
-}
- 
- 
+} 
 //**运动主体**//
 void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 	//bk是地图信息，look作数据记录，xy记录坐标，move记录蛇的运动轨迹
@@ -123,7 +119,6 @@ void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 	gotoxy(xy[0] * 2, xy[1]);//这里蛇头就往前移动了
 	BackGround(0, 3);//与蛇体一个颜色
 	printf("  ");
- 
 	//如果吃了果实//
 	if (bk[xy[0]][xy[1]] == 2) {
 		look[2]++;//分数加一
@@ -141,7 +136,6 @@ void map(int bk[20][20], int look[4], int xy[2], int move[20][20]) {
 		BackGround(0, 2);
 		printf("  ");
 	}
- 
 	//如果撞了墙或者自己//
 	if (bk[xy[0]][xy[1]] == 1 || bk[xy[0]][xy[1]] == 3) {
 		look[3] = 1;//表示已经输了
