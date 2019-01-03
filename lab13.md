@@ -1,7 +1,7 @@
 ﻿贪吃蛇代码C语言；
   由于水平有限，代码为粘贴，
-  原作网址：  https://blog.csdn.net/haohulala/article/details/80036221                                                              
-```
+  原作网址：  https://blog.csdn.net/haohulala/article/details/800362          
+```  
 #include "stdafx.h"
 #include <stdio.h>
 #include <windows.h>
@@ -175,5 +175,4 @@ int main() {
 	printf("游戏结束，谢谢游玩!^_^");
 	return 0;
 }
-
 	```
